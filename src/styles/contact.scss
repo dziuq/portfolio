@@ -1,0 +1,8 @@
+@use '@styles/tokens' as *;
+
+.contact { display: grid; gap: 1rem; max-width: 600px; }
+.contact input, .contact textarea {
+  width: 100%; background: $panel; border: 1px solid rgba(255,255,255,.08);
+  border-radius: 8px; padding: .75rem 1rem; color: $text;
+}
+.contact label { display: grid; gap: .5rem; color: $muted; }

@@ -1,0 +1,73 @@
+@use '@styles/tokens' as *;
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.timeline__item {
+  border-left: 2px solid $primary;
+  padding-left: 1rem;
+  position: relative;
+  transition: all 0.1s ease;
+
+  &.expanded {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: $accent;
+    border-radius: 0 12px 12px 0;
+    padding: 1rem 1rem 1rem 1.25rem;
+  }
+}
+
+.timeline__head {
+  background: none;
+  border: none;
+  color: inherit;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  h3 {
+    margin: 0;
+  }
+
+  span {
+    color: $muted;
+    font-size: 0.9rem;
+  }
+
+  .timeline__arrow {
+    font-size: 1.5rem;
+    color: $primary;
+    transition: transform 0.2s ease;
+  }
+}
+
+.timeline__item.expanded .timeline__arrow {
+  transform: rotate(180deg);
+}
+
+.timeline__summary {
+  margin-top: 0.5rem;
+
+  p {
+    margin: 0.25rem 0;
+    color: $muted;
+  }
+}
+
+.timeline__details {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.4rem;
+
+  p {
+    color: $text;
+    line-height: 1.6;
+  }
+}

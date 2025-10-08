@@ -1,0 +1,20 @@
+$bg: #0b0f14;
+$panel: #0f141b;
+$text: #dbe4ee;
+$muted: #9bb0c9;
+$primary: #4cc2ff;
+$accent: #7cf5a6;
+
+$section-spacing-desktop: 12rem;
+$section-spacing-mobile: 7rem;
+
+$font-body: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+$shadow: 0 10px 30px rgba(0,0,0,.25);
+
+$breakpoints: (
+  sm: 480px,
+  md: 768px,
+  lg: 1024px
+);

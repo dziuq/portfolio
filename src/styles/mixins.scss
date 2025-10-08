@@ -1,0 +1,14 @@
+@use 'tokens' as *;
+
+@mixin card {
+  background: $panel;
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 16px;
+  box-shadow: $shadow;
+}
+
+@mixin media-down($key) {
+  @media (max-width: map-get($breakpoints, $key)) {
+    @content;
+  }
+}

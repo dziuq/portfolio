@@ -1,0 +1,5 @@
+@use 'tokens' as *;
+
+h1, h2, h3 { font-family: $font-body; line-height: 1.1; }
+p { color: $muted; line-height: 1.7; }
+code, pre { font-family: $font-mono; }
