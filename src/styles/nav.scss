@@ -1,6 +1,12 @@
 @use '@styles/tokens' as *;
 @use '@styles/mixins' as *;
 
+@include media-down(md) {
+  .nav {
+    display: none;
+  }
+}
+
 .nav {
   position: sticky;
   top: 0;

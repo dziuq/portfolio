@@ -19,6 +19,7 @@
   }
 
   .hero__text {
+     order: 1; // desktop default
     .eyebrow {
       color: $primary;
       letter-spacing: .15em;
