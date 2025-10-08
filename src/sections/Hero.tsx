@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="container hero__content">
         <div className="hero__text">
           <p className="eyebrow">Hi, my name is</p>
-          <h1>Dawid Dziuk.</h1>
+          <h1>Dawid Dziuk</h1>
           <h2>I build reliable .NET applications and modern web experiences.</h2>
           <p className="lead">
             I’m a passionate .NET Developer with over two years of experience creating scalable, 

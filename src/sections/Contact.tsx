@@ -20,11 +20,11 @@ const Contact: React.FC = () => {
       </p>
       <form className="contact" onSubmit={onSubmit}>
         <label>
-          Twój email
+          Email
           <input required type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="you@example.com" />
         </label>
         <label>
-          Wiadomość
+          Message
           <textarea required rows={5} value={message} onChange={e => setMessage(e.target.value)} placeholder="Write me a message.." />
         </label>
         <button className="btn" type="submit">Send</button>
